@@ -1,6 +1,10 @@
 SET SERVEROUTPUT ON
 SET DEFINE ON
 SET ECHO ON
+SPOOL 0_log_files\database_deployment.log
+
+REM Dropping Schemas
+@9_drop_schemas/drop_vf_spmc_schemas.sql
 
 REM Creating Schemas
 @1_create_schemas/create_vf_spmc_schemas.sql
@@ -137,6 +141,10 @@ REM Creating Constraints
 
 
 
+REM Inserting Calendar Data
+@8_d_calendar_month/1_d_calendar_month.sql
+COMMIT;
 
 
+SPOOL OFF
 
