@@ -1,0 +1,9 @@
+--------------------------------------------------------
+--  Constraints for Table D_KPI_CALCULATION
+--------------------------------------------------------
+
+  ALTER TABLE "D_KPI_CALCULATION" MODIFY ("VALID_FROM_DT" NOT NULL ENABLE);
+  ALTER TABLE "D_KPI_CALCULATION" MODIFY ("LOCAL_MARKET_ID" NOT NULL ENABLE);
+  ALTER TABLE "D_KPI_CALCULATION" MODIFY ("KPI_CALCULATION_ID" NOT NULL ENABLE);
+  ALTER TABLE "D_KPI_CALCULATION" MODIFY ("CREATED_DT" NOT NULL ENABLE);
+/

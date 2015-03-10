@@ -1,0 +1,14 @@
+--------------------------------------------------------
+--  DDL for Table R_KPI_CALCULATION
+--------------------------------------------------------
+
+  CREATE TABLE "VF_SPMC_REF"."R_KPI_CALCULATION" 
+   (	"LOCAL_MARKET" VARCHAR2(20), 
+	"CALCULATION_NAME" VARCHAR2(20), 
+	"KPI_GUIDANCE_VALUE" NUMBER(38,0), 
+	"KPI_GUIDANCE_DESCRIPTION" VARCHAR2(256), 
+	"CALCUALTION_LOCALE" VARCHAR2(20), 
+	"KPI_DESCRIPTION" VARCHAR2(100), 
+	"KPI_TYPE" VARCHAR2(20), 
+	"KPI_GUIDANCE_OPERATOR" VARCHAR2(20)
+   ) ;
