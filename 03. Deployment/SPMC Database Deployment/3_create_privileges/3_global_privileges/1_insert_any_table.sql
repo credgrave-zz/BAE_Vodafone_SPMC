@@ -1,0 +1,5 @@
+GRANT INSERT ANY TABLE TO vf_spmc_ref;
+GRANT INSERT ANY TABLE TO vf_spmc_landing;
+GRANT INSERT ANY TABLE TO vf_spmc_staging;
+GRANT INSERT ANY TABLE TO vf_spmc_perf;
+GRANT INSERT ANY TABLE TO vf_spmc_etl_error;

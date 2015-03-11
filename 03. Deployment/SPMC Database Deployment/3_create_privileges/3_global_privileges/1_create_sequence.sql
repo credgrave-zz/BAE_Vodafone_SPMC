@@ -1,0 +1,5 @@
+GRANT CREATE SEQUENCE TO vf_spmc_ref;
+GRANT CREATE SEQUENCE TO vf_spmc_landing;
+GRANT CREATE SEQUENCE TO vf_spmc_staging;
+GRANT CREATE SEQUENCE TO vf_spmc_perf;
+GRANT CREATE SEQUENCE TO vf_spmc_etl_error;

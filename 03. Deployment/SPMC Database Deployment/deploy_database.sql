@@ -77,9 +77,19 @@ REM Creating Performance Tables
 
 
 REM Creating Table Privileges
-@3_create_privileges/2_table_privileges/1_vf_spmc_perf.sql
-@3_create_privileges/2_table_privileges/1_vf_spmc_staging.sql
+-- @3_create_privileges/2_table_privileges/1_vf_spmc_perf.sql
+-- @3_create_privileges/2_table_privileges/1_vf_spmc_staging.sql
+-- @3_create_privileges/2_table_privileges/1_vf_spmc_landing.sql
+@3_create_privileges/2_table_privileges/1_grant_table_priv.sql
 
+REM Creating Global Privileges
+@3_create_privileges/3_global_privileges/1_create_database_links.sql
+@3_create_privileges/3_global_privileges/1_insert_any_table.sql
+@3_create_privileges/3_global_privileges/1_delete_any_table.sql
+@3_create_privileges/3_global_privileges/1_create_sequence.sql
+@3_create_privileges/3_global_privileges/1_alter_table.sql
+@3_create_privileges/3_global_privileges/1_create_index.sql
+@3_create_privileges/3_global_privileges/1_create_any_table.sql
 
 REM Creating Reference Data
 
@@ -108,6 +118,8 @@ REM Creating Reference Data
 @4_create_reference_data/R_STUCK_OPPORTUNITY_DATA_TABLE.sql
 @4_create_reference_data/R_TABLE_CONTROL_DATES_DATA_TABLE.sql
 @4_create_reference_data/R_TARGET_TYPE_DATA_TABLE.sql
+
+@4_create_reference_data/USER_PRIVELEGES.sql
 COMMIT;
 
 
@@ -120,8 +132,8 @@ REM Creating Sequences
 @5_create_sequences/1_vf_spmc_perf/D_LOCAL_MARKET_ID_SEQ.sql
 @5_create_sequences/1_vf_spmc_perf/D_OPPORTUNITY_DETAIL_ID_SEQ.sql
 
-@5_create_sequences/1_vf_spmc_staging/D_LANDSCAPE_DETAIL_ID_SEQ.sql
-@5_create_sequences/1_vf_spmc_staging/D_OPPORTUNITY_DETAIL_ID_SEQ.sql
+@5_create_sequences/2_vf_spmc_staging/D_LANDSCAPE_DETAIL_ID_SEQ.sql
+@5_create_sequences/2_vf_spmc_staging/D_OPPORTUNITY_DETAIL_ID_SEQ.sql
 
 
 REM Creating Constraints

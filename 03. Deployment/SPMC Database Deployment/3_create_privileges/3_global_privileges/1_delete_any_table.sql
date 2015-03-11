@@ -1,0 +1,5 @@
+GRANT DELETE ANY TABLE TO vf_spmc_ref;
+GRANT DELETE ANY TABLE TO vf_spmc_landing;
+GRANT DELETE ANY TABLE TO vf_spmc_staging;
+GRANT DELETE ANY TABLE TO vf_spmc_perf;
+GRANT DELETE ANY TABLE TO vf_spmc_etl_error;
