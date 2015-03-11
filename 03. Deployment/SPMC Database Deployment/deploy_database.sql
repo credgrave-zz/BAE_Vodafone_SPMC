@@ -4,7 +4,7 @@ SET ECHO ON
 SPOOL 0_log_files\database_deployment.log
 
 REM Dropping Schemas
-@9_drop_schemas/drop_vf_spmc_schemas.sql
+@9_drop_schemas/drop_spmc_schemas.sql
 
 REM Creating Schemas
 @1_create_schemas/create_vf_spmc_schemas.sql
